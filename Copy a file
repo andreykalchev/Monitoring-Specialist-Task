@@ -1,0 +1,1 @@
+Copy-Item -Path C:\TestFolder\test.html -Destination C:\inetpub\wwwroot\test.html
