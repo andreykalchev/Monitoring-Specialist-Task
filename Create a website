@@ -1,0 +1,4 @@
+Import-Module webadministration
+New-Item C:\inetpub\andreykalchev.com -type directory
+New-Item C:\inetpub\andreykalchev.com\index.html -type file
+New-Item iis:\Sites\andreykalchev.com -bindings @{protocol="http";bindingInformation=":80:andreykalchev.com"} -physicalPath C:\inetpub\andreykalchev.com\
